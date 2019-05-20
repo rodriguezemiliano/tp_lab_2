@@ -46,8 +46,7 @@ namespace Entidades_2018
 
             sb.AppendLine("LECHE");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine("CALORIAS : " + this.CantidadCalorias);
-            sb.AppendLine("TIPO : " + this.tipo);
+            sb.AppendLine("CALORIAS : " + this.CantidadCalorias + " TIPO : " + this.tipo);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

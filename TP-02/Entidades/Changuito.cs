@@ -60,16 +60,16 @@ namespace Entidades_2018
                 switch (tipo)
                 {
                     case ETipo.Snacks:
-                        if (tipo.ToString() == (v.GetType()).Name)
-                            sb.AppendLine(v.Mostrar());
+                        if (v is Snacks)
+                            sb.AppendLine(((Snacks)v).Mostrar());
                         break;
                     case ETipo.Dulce:
-                        if ( tipo.ToString() == (v.GetType()).Name)
-                            sb.AppendLine(v.Mostrar());
+                        if (v is Dulce)
+                            sb.AppendLine(((Dulce)v).Mostrar());
                         break;
                     case ETipo.Leche:
-                        if (tipo.ToString() == (v.GetType()).Name)
-                            sb.AppendLine(v.Mostrar());
+                        if (v is Leche)
+                            sb.AppendLine(((Leche)v).Mostrar());
                         break;
                     default:
                         sb.AppendLine(v.Mostrar());
